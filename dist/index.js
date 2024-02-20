@@ -1,11 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ReadingTimeMagicPlugin = void 0;
-const plugin_reading_time_1 = require("@vuepress/plugin-reading-time");
-const ReadingTimeMagicPlugin = ({ wordPerMinute = 300, locales = "zh-CN", }) => {
+import { useReadingTimePlugin, removeReadingTimePlugin, } from "@vuepress/plugin-reading-time";
+export const ReadingTimeMagicPlugin = ({ wordPerMinute = 300, locales = {
+    "/": {
+        less1Minute: "小于一分钟",
+        time: "阅读时长",
+    },
+}, }) => {
     return (app) => {
-        (0, plugin_reading_time_1.removeReadingTimePlugin)(app);
-        (0, plugin_reading_time_1.useReadingTimePlugin)(app, {
+        removeReadingTimePlugin(app);
+        useReadingTimePlugin(app, {
             wordPerMinute,
             locales,
         });
@@ -14,4 +16,3 @@ const ReadingTimeMagicPlugin = ({ wordPerMinute = 300, locales = "zh-CN", }) => 
         };
     };
 };
-exports.ReadingTimeMagicPlugin = ReadingTimeMagicPlugin;

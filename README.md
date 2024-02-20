@@ -8,8 +8,8 @@ A magic reading-time plugin of vuepress
 
 ```bash
 # npm
-$ npm install vuepress-plugin-reading-time-magic
+$ npm install vuepress-plugin-reading-time-magic@latest
 
 # yarn
-$ yarn add vuepress-plugin-reading-time-magic
+$ yarn add vuepress-plugin-reading-time-magic@latest
 ```

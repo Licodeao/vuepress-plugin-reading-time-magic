@@ -9,7 +9,12 @@ interface ReadingTimePluginMagicOptions extends ReadingTimePluginOptions {}
 
 export const ReadingTimeMagicPlugin = ({
   wordPerMinute = 300,
-  locales = "zh-CN",
+  locales = {
+    "/": {
+      less1Minute: "小于一分钟",
+      time: "阅读时长",
+    },
+  },
 }: ReadingTimePluginMagicOptions): Plugin => {
   return (app) => {
     removeReadingTimePlugin(app);

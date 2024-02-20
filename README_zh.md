@@ -8,8 +8,8 @@ Vuepress 阅读时长/字数统计插件
 
 ```bash
 # npm
-$ npm install vuepress-plugin-reading-time-magic
+$ npm install vuepress-plugin-reading-time-magic@latest
 
 # yarn
-$ yarn add vuepress-plugin-reading-time-magic
+$ yarn add vuepress-plugin-reading-time-magic@latest
 ```

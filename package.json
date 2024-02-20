@@ -1,0 +1,23 @@
+{
+  "name": "vuepress-plugin-reading-time-magic",
+  "version": "1.0.0",
+  "description": "A magic vuepress plugin for reading time ",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "reading-time"
+  ],
+  "author": "Licodeao",
+  "license": "MIT",
+  "dependencies": {
+    "@vuepress/core": "^2.0.0-rc.0",
+    "@vuepress/plugin-reading-time": "^2.0.0-rc.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
